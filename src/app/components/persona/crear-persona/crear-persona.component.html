@@ -1,0 +1,104 @@
+<div class="container">
+    <mat-toolbar class="mat-tool">
+      <span>Registrar Persona</span>
+      <button mat-raised-button (click)="regresar()" style="margin-right: 20px" color="accent">Volver</button>
+    </mat-toolbar>
+    <mat-card style="margin-top: 10px">
+      
+      <form [formGroup]="form">
+  
+        <p>Los campos con (*) son obligatorios</p>
+  
+        <mat-grid-list cols="4" rowHeight="70px">
+  
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho">
+              <mat-label>Nombre</mat-label>
+              <input
+                matInput
+                autocomplete="off"
+                formControlName="Nombre"
+              />
+            </mat-form-field>
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="3" [rowspan]="8">
+            <img src="./assets/img/persona.png" width="250" height="250" />
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho">
+              <mat-label>Apellidos</mat-label>
+              <input
+                matInput
+                autocomplete="off"
+                formControlName="Apellidos"
+              />
+            </mat-form-field>
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho">
+              <mat-label>Numero de identificacion</mat-label>
+              <input
+                matInput
+                autocomplete="off"
+                formControlName="NumeroIdentificacion"
+              />
+            </mat-form-field>
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho">
+              <mat-label>Email</mat-label>
+              <input
+                matInput
+                autocomplete="off"
+                formControlName="Email"
+              />
+            </mat-form-field>
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho">
+              <mat-label>Tipo de identificacion</mat-label>
+              <input
+                matInput
+                autocomplete="off"
+                formControlName="TipoIdentificacion"
+              />
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho">
+              <mat-label>Usuario</mat-label>
+              <input
+                matInput
+                autocomplete="off"
+                formControlName="User"
+              />
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field class="ancho">
+              <mat-label>Contraseña</mat-label>
+              <input
+                matInput
+                autocomplete="off"
+                formControlName="Password"
+                type="password"
+              />
+            </mat-form-field>
+          </mat-grid-tile>
+  
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <button mat-raised-button (click)="registrarPersona()" color="primary">Aceptar</button>
+          </mat-grid-tile>
+  
+        </mat-grid-list>
+  
+      </form>
+    </mat-card>
+  </div>

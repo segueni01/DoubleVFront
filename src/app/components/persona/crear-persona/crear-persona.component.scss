@@ -1,0 +1,19 @@
+.ancho{
+    width: 80%;
+}
+
+p{
+    font-size: 10px;
+    color: gray;
+}
+
+.mat-tool{
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+  }

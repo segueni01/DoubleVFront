@@ -1,0 +1,29 @@
+table {
+  width: 90%;
+  margin-top: 10px;
+  margin: auto;
+}
+
+th{
+  width: 14%;
+}
+
+a{
+  cursor: pointer;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-tool{
+  display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-between;
+}

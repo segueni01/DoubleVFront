@@ -1,0 +1,26 @@
+<div class="body">
+  <form [formGroup]="form">
+    <div class="login">
+        <h1 class="h3 mb-3 fw-normal">Login DoubleV</h1>
+
+        <mat-form-field class="ancho" appearance="fill">
+            <mat-label>Usuario</mat-label>
+            <input matInput
+                autocomplete="off"
+                formControlName="User">
+          </mat-form-field>
+
+          <mat-form-field class="ancho" appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input matInput
+                autocomplete="off"
+                formControlName="Password"
+                type="password">
+          </mat-form-field>
+
+          <br>
+          <button (click)="ingresar()" class="ancho" mat-raised-button mat-button color="primary">Iniciar sesion</button>
+          <button (click)="registrar()" class="ancho btnDown" mat-raised-button mat-button>Registrar</button>
+    </div>
+  </form>
+</div>
