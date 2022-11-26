@@ -1,27 +1,25 @@
-# DoubleVFront
+# FrontProfesores
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+NOTA: tener instalado el node y angular CLI
 
-## Development server
+Luego de haber clonado el proyecto lo primero que se debe hacer es:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalar modulos de node
 
-## Code scaffolding
+debemos ejecturar el comando `npm install` para instalar los modulos de node
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## ejecutar el proyecto
 
-## Build
+luego de haber instalados los modulos de node corremos el proyecto con el comando `ng serve` automaticamente el toma el puerto 4200
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Pagina principal del proyecto
 
-## Running unit tests
+http://localhost:4200/dashboard
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Tener en cuenta:
 
-## Running end-to-end tests
+en el archivo de enviroments.ts estan las url de las api a las que esta apuntando, actualmente el proyecto back se esta ejecutando en esta url `https://localhost:7110/`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+en caso de que se cambie la url de la api debemos modificar la url que se encuentra en este archivo.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para que el front funcione debe estar corriendo la API.
