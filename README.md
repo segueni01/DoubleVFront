@@ -1,5 +1,3 @@
-# FrontProfesores
-
 NOTA: tener instalado el node y angular CLI
 
 Luego de haber clonado el proyecto lo primero que se debe hacer es:
